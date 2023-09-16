@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Desktop/quartus_verilog_github/or_gate/simulation/modelsim
+vand_gate_tb
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1694374041
+!i10b 1
+!s100 h`monAUV4XAcDmOcK_Fkk2
+IJ6zYZ4_QoFP?k1BT7BPCS1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 or_gate_tb_sv_unit
+S1
+R0
+w1694372231
+8C:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate_tb.sv
+FC:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate_tb.sv
+L0 4
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1694374041.000000
+!s107 C:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Desktop/quartus_verilog_github/or_gate|C:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate_tb.sv|
+!i113 1
+Z6 o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/home/Desktop/quartus_verilog_github/or_gate
+Z7 tCvgOpt 0
+vor_gate
+R1
+R2
+!i10b 1
+!s100 6]A^^^lhB[kaS3NKTm@8X1
+Ib7zSoY<faEZHh3@IO^A5T0
+R3
+!s105 or_gate_svo_unit
+S1
+R0
+w1694374033
+8or_gate.svo
+For_gate.svo
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 or_gate.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|or_gate.svo|
+!i113 1
+R6
+!s92 -sv -work work +incdir+.
+R7

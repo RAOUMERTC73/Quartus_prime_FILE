@@ -1,0 +1,14 @@
+|bcd_to_7segment_decoder
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seven[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

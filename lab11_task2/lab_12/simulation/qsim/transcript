@@ -1,0 +1,29 @@
+# do bcd_to_7segment_decoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:43 on Jan 04,2023
+# vlog -work work bcd_to_7segment_decoder.vo 
+# -- Compiling module bcd_to_7segment_decoder
+# 
+# Top level modules:
+# 	bcd_to_7segment_decoder
+# End time: 13:39:43 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:43 on Jan 04,2023
+# vlog -work work Waveform2.vwf.vt 
+# -- Compiling module bcd_to_7segment_decoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	bcd_to_7segment_decoder_vlg_vec_tst
+# End time: 13:39:43 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.bcd_to_7segment_decoder_vlg_vec_tst 
+# Start time: 13:39:43 on Jan 04,2023
+# Loading work.bcd_to_7segment_decoder_vlg_vec_tst
+# Loading work.bcd_to_7segment_decoder
+# after#25
+# ** Note: $finish    : Waveform2.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /bcd_to_7segment_decoder_vlg_vec_tst
+# End time: 13:39:43 on Jan 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

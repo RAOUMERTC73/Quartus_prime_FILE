@@ -1,0 +1,9 @@
+|parityodd
+peven << peven.DB_MAX_OUTPUT_PORT_TYPE
+podd << peven.DB_MAX_OUTPUT_PORT_TYPE
+a => peven.IN0
+b => peven.IN1
+c => peven.IN0
+d => peven.IN1
+
+

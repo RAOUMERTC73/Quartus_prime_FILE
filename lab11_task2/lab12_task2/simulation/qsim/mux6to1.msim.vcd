@@ -1,0 +1,66 @@
+$comment
+	File created using the following command:
+		vcd file mux6to1.msim.vcd -direction
+$end
+$date
+	Mon Jan 23 19:29:24 2023
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux6to1_vlg_vec_tst $end
+$var reg 6 ! a [5:0] $end
+$var reg 3 " sel [2:0] $end
+$var wire 1 # out $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 + a[5]~input_o $end
+$var wire 1 , sel[2]~input_o $end
+$var wire 1 - sel[0]~input_o $end
+$var wire 1 . sel[1]~input_o $end
+$var wire 1 / a[4]~input_o $end
+$var wire 1 0 a[2]~input_o $end
+$var wire 1 1 a[3]~input_o $end
+$var wire 1 2 a[1]~input_o $end
+$var wire 1 3 a[0]~input_o $end
+$var wire 1 4 out~0_combout $end
+$var wire 1 5 out~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111111 !
+b11 "
+1#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+1+
+0,
+1-
+1.
+1/
+10
+11
+12
+13
+14
+15
+$end
+#1000000

@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Downloads/Programs/fulladder4/simulation/modelsim
+vadder4
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1669138330
+!i10b 1
+!s100 Vdk`4Hd20mOekJlP3kCF73
+I]HEmBfhaBMzoTz`1mXfo]0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 fulladder4_sv_unit
+S1
+R0
+Z5 w1667323436
+Z6 8D:/Downloads/Programs/fulladder4/fulladder4.sv
+Z7 FD:/Downloads/Programs/fulladder4/fulladder4.sv
+L0 12
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1669138330.000000
+Z10 !s107 D:/Downloads/Programs/fulladder4/fulladder4.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Downloads/Programs/fulladder4|D:/Downloads/Programs/fulladder4/fulladder4.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+D:/Downloads/Programs/fulladder4
+Z14 tCvgOpt 0
+vfulladder4
+R1
+R2
+!i10b 1
+!s100 [i<gUH6C4lIJdUjkl6e?_0
+I6T1O^jh;0h9E8XF@Z4lI^2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14

@@ -1,0 +1,59 @@
+# Reading C:/Users/home/Desktop/VIDEO/modelsim_ase/tcl/vsim/pref.tcl
+# do tc21073_sub_8_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/Users/home/Desktop/VIDEO/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Desktop/VIDEO/lab7(c) {C:/Users/home/Desktop/VIDEO/lab7(c)/tc21073_sub_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:36:41 on Nov 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Desktop/VIDEO/lab7(c)" C:/Users/home/Desktop/VIDEO/lab7(c)/tc21073_sub_8.sv 
+# -- Compiling module tc21073_sub_8
+# 
+# Top level modules:
+# 	tc21073_sub_8
+# End time: 16:36:42 on Nov 20,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/home/Desktop/VIDEO/lab7(c) {C:/Users/home/Desktop/VIDEO/lab7(c)/fulladder1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:36:42 on Nov 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Desktop/VIDEO/lab7(c)" C:/Users/home/Desktop/VIDEO/lab7(c)/fulladder1.sv 
+# -- Compiling module fulladder1
+# 
+# Top level modules:
+# 	fulladder1
+# End time: 16:36:42 on Nov 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tc21073_sub_8
+# vsim work.tc21073_sub_8 
+# Start time: 16:39:54 on Nov 20,2022
+# Loading sv_std.std
+# Loading work.tc21073_sub_8
+# Loading work.fulladder1
+wave create -driver freeze -pattern constant -value 00000001 -range 7 0 -starttime 0ns -endtime 1000ns sim:/tc21073_sub_8/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 00000001 -range 7 0 -starttime 0ns -endtime 1000ns sim:/tc21073_sub_8/a
+# /tc21073_sub_8/a already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -driver freeze -pattern constant -value 00000001 -range 7 0 -starttime 0ns -endtime 1000ns sim:/tc21073_sub_8/b
+add wave -position insertpoint  \
+sim:/tc21073_sub_8/sum
+add wave -position insertpoint  \
+sim:/tc21073_sub_8/cout
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/tc21073_sub_8/cin
+add wave -position insertpoint  \
+sim:/tc21073_sub_8/sum
+add wave -position insertpoint  \
+sim:/tc21073_sub_8/cout
+run -all
+# End time: 16:44:18 on Nov 20,2022, Elapsed time: 0:04:24
+# Errors: 1, Warnings: 0
+wave editwrite -file C:/Users/home/Desktop/VIDEO/lab7(c)/simulation/modelsim/wave.do

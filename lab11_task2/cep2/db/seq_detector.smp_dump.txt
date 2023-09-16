@@ -1,0 +1,11 @@
+
+State Machine - |seq_detector|state
+Name state.00111111 state.00011111 state.00001111 state.00000111 state.00000011 state.00000001 state.00000000 state.01111110 
+state.00000000 0 0 0 0 0 0 0 0 
+state.00000001 0 0 0 0 0 1 1 0 
+state.00000011 0 0 0 0 1 0 1 0 
+state.00000111 0 0 0 1 0 0 1 0 
+state.00001111 0 0 1 0 0 0 1 0 
+state.00011111 0 1 0 0 0 0 1 0 
+state.00111111 1 0 0 0 0 0 1 0 
+state.01111110 0 0 0 0 0 0 1 1 

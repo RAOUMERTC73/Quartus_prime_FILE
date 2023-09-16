@@ -1,0 +1,8 @@
+module seq_detector (input w, input clk, output reg z);
+   reg [7:0] shift_reg; // 8-bit shift register
+
+   always @(posedge clk) begin
+      shift_reg = {shift_reg[6:0], w}; // shift in new input 'w'
+      z = (shift_reg == 8'h7e); // output '1' if sequence detected
+   end
+endmodule

@@ -1,0 +1,9 @@
+	//halfadder ckt tc-073
+	module halfadd(s,cout,a,b);
+	
+	output s,cout;
+	input a,b;
+	
+	assign s=(a||b)&&(~a||~b);
+	assign cout=(&&b);
+	endmodule

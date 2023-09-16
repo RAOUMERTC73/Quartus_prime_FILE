@@ -1,0 +1,35 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Desktop/VIDEO/lab11_task2/cep2/simulation/modelsim
+vseq_detector
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1674483892
+!i10b 1
+!s100 [b:3k5T<@P`WPQKMG@7N91
+I2gUE5X4L24Jgc^UX_Dbd[0
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 seq_detector_sv_unit
+S1
+R0
+w1674485392
+8C:/Users/home/Desktop/VIDEO/lab11_task2/cep2/seq_detector.sv
+FC:/Users/home/Desktop/VIDEO/lab11_task2/cep2/seq_detector.sv
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1674483892.000000
+!s107 C:/Users/home/Desktop/VIDEO/lab11_task2/cep2/seq_detector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Desktop/VIDEO/lab11_task2/cep2|C:/Users/home/Desktop/VIDEO/lab11_task2/cep2/seq_detector.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/home/Desktop/VIDEO/lab11_task2/cep2
+tCvgOpt 0

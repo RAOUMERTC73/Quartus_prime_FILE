@@ -1,0 +1,27 @@
+|counter_74160
+clk => r[0].CLK
+clk => r[1].CLK
+clk => r[2].CLK
+clk => r[3].CLK
+reset => r.OUTPUTSELECT
+reset => r.OUTPUTSELECT
+reset => r.OUTPUTSELECT
+reset => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+load => r.OUTPUTSELECT
+din[0] => r.DATAB
+din[1] => r.DATAB
+din[2] => r.DATAB
+din[3] => r.DATAB
+inc => r.OUTPUTSELECT
+inc => r.OUTPUTSELECT
+inc => r.OUTPUTSELECT
+inc => r.OUTPUTSELECT
+q[0] <= r[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= r[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= r[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= r[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

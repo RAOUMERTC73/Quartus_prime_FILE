@@ -1,0 +1,16 @@
+// A ⊙ B = AB + ĀB ̅.
+module parityodd (p,a,b,c,d);
+
+output logic p;
+
+input wire a,b,c,d;
+
+reg ab,cd;
+
+xnor(ab,a,b);
+
+xnor(cd,c,d);
+ 
+assign p= (ab & cd)||(~ab & ~cd);
+
+endmodule

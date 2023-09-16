@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Desktop/VIDEO/fulladder/fulladder/fulladder.sv
+source_file = 1, C:/Users/home/Desktop/VIDEO/fulladder/fulladder/db/fulladder.cbx.xml
+design_name = fulladder
+instance = comp, \s~output , s~output, fulladder, 1
+instance = comp, \cout~output , cout~output, fulladder, 1
+instance = comp, \a~input , a~input, fulladder, 1
+instance = comp, \c_in~input , c_in~input, fulladder, 1
+instance = comp, \b~input , b~input, fulladder, 1
+instance = comp, \s~0 , s~0, fulladder, 1
+instance = comp, \cout~0 , cout~0, fulladder, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, fulladder, 1

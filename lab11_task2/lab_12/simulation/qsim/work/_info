@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.0/lab_12/simulation/qsim
+vbcd_to_7segment_decoder
+Z1 !s110 1672821583
+!i10b 1
+!s100 XO>^OXc^jk:BUdeH2C^^?1
+I0]Qdl3UT4g]gAll53gWK70
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1672821582
+8bcd_to_7segment_decoder.vo
+Fbcd_to_7segment_decoder.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1672821583.000000
+!s107 bcd_to_7segment_decoder.vo|
+!s90 -work|work|bcd_to_7segment_decoder.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbcd_to_7segment_decoder_vlg_vec_tst
+R1
+!i10b 1
+!s100 ;gie4n;hY^VL9eA93]miH0
+IcMeH?O<f@Nkj:MKVh@NNN0
+R2
+R0
+w1672821581
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R5
+R6

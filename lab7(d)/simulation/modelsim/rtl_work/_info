@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Desktop/VIDEO/lab7(d)/simulation/modelsim
+vfulladder1
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1669038656
+!i10b 1
+!s100 OCjfkkS_H=WDLEjkS0HL=3
+ITR73_Ub>4i^DmHA7B[bj;1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fulladder1_sv_unit
+S1
+R0
+w1668967448
+8C:/Users/home/Desktop/VIDEO/lab7(d)/fulladder1.sv
+FC:/Users/home/Desktop/VIDEO/lab7(d)/fulladder1.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1669038655.000000
+!s107 C:/Users/home/Desktop/VIDEO/lab7(d)/fulladder1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Desktop/VIDEO/lab7(d)|C:/Users/home/Desktop/VIDEO/lab7(d)/fulladder1.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/home/Desktop/VIDEO/lab7(d)
+Z7 tCvgOpt 0
+vtc21073_sub_4
+R1
+!s110 1669038655
+!i10b 1
+!s100 oidh7=E>5d0OkJPc3>@TQ2
+I]Q:1ci7;G=TQV;nHR^nlY2
+R2
+!s105 tc21073_sub_4_sv_unit
+S1
+R0
+w1668967384
+8C:/Users/home/Desktop/VIDEO/lab7(d)/tc21073_sub_4.sv
+FC:/Users/home/Desktop/VIDEO/lab7(d)/tc21073_sub_4.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Desktop/VIDEO/lab7(d)/tc21073_sub_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Desktop/VIDEO/lab7(d)|C:/Users/home/Desktop/VIDEO/lab7(d)/tc21073_sub_4.sv|
+!i113 1
+R5
+R6
+R7

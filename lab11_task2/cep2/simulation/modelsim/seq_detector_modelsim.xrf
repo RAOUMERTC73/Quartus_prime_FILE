@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Desktop/VIDEO/lab11_task2/cep2/seq_detector.sv
+source_file = 1, C:/Users/home/Desktop/VIDEO/lab11_task2/cep2/db/seq_detector.cbx.xml
+design_name = seq_detector
+instance = comp, \z~output , z~output, seq_detector, 1
+instance = comp, \w~input , w~input, seq_detector, 1
+instance = comp, \clk~input , clk~input, seq_detector, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, seq_detector, 1

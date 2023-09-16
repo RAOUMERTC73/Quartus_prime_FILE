@@ -1,0 +1,43 @@
+|shift_reg_8bit
+din[0] => r.DATAB
+din[1] => r.DATAB
+din[2] => r.DATAB
+din[3] => r.DATAB
+din[4] => r.DATAB
+din[5] => r.DATAB
+din[6] => r.DATAB
+din[7] => r.DATAB
+clk => r[0].CLK
+clk => r[1].CLK
+clk => r[2].CLK
+clk => r[3].CLK
+clk => r[4].CLK
+clk => r[5].CLK
+clk => r[6].CLK
+clk => r[7].CLK
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+pl => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+arst => r.OUTPUTSELECT
+q[0] <= r[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= r[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= r[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= r[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= r[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= r[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= r[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= r[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

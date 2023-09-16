@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'Clk'
+Slack : -6.965
+TNS   : -134.211
+
+Type  : Slow 1100mV 85C Model Setup 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -3.434
+TNS   : -85.079
+
+Type  : Slow 1100mV 85C Model Hold 'Clk'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.698
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.394
+TNS   : -18.403
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clk'
+Slack : -0.394
+TNS   : -14.656
+
+Type  : Slow 1100mV 0C Model Setup 'Clk'
+Slack : -6.724
+TNS   : -128.096
+
+Type  : Slow 1100mV 0C Model Setup 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -3.598
+TNS   : -87.576
+
+Type  : Slow 1100mV 0C Model Hold 'Clk'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.394
+TNS   : -18.632
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clk'
+Slack : -0.394
+TNS   : -15.953
+
+Type  : Fast 1100mV 85C Model Setup 'Clk'
+Slack : -4.449
+TNS   : -84.301
+
+Type  : Fast 1100mV 85C Model Setup 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.820
+TNS   : -43.476
+
+Type  : Fast 1100mV 85C Model Hold 'Clk'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clk'
+Slack : -0.080
+TNS   : -2.154
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.050
+TNS   : -0.835
+
+Type  : Fast 1100mV 0C Model Setup 'Clk'
+Slack : -3.814
+TNS   : -71.256
+
+Type  : Fast 1100mV 0C Model Setup 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.815
+TNS   : -43.323
+
+Type  : Fast 1100mV 0C Model Hold 'Clk'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clk'
+Slack : -0.080
+TNS   : -2.179
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.021
+TNS   : -0.251
+
+------------------------------------------------------------

@@ -1,0 +1,25 @@
+module bcd_to_7segment_decode(bcd,seven);
+
+input [3:0]bcd;
+
+output reg [6:0]seven;
+
+always@(*)
+begin
+
+case(bcd)
+4'b0000: seven = 7'd0;
+4'b0001: seven = 7'd1;
+4'b0010: seven = 7'd2;
+4'b0011: seven = 7'd3;
+4'b0100: seven = 7'd4;
+4'b0101: seven = 7'd5;
+4'b0110: seven = 7'd6;
+4'b0111: seven = 7'd7;
+4'b1000: seven = 7'd8;
+4'b1001: seven = 7'd9;
+default seven = "X";
+endcase
+
+end
+endmodule

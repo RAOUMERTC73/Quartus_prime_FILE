@@ -1,0 +1,13 @@
+|halfadd
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+a => cout.IN0
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+b => s.IN1
+b => cout.IN1
+
+

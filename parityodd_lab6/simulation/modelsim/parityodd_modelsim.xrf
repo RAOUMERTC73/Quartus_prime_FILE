@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Desktop/VIDEO/parityodd/parityodd.sv
+source_file = 1, C:/Users/home/Desktop/VIDEO/parityodd/Waveformodd.vwf
+source_file = 1, C:/Users/home/Desktop/VIDEO/parityodd/db/parityodd.cbx.xml
+design_name = parityodd
+instance = comp, \peven~output , peven~output, parityodd, 1
+instance = comp, \podd~output , podd~output, parityodd, 1
+instance = comp, \c~input , c~input, parityodd, 1
+instance = comp, \d~input , d~input, parityodd, 1
+instance = comp, \a~input , a~input, parityodd, 1
+instance = comp, \b~input , b~input, parityodd, 1
+instance = comp, \peven~0 , peven~0, parityodd, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, parityodd, 1

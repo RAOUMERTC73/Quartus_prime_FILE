@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate.sv
+source_file = 1, C:/Users/home/Desktop/quartus_verilog_github/or_gate/or_gate_tb.sv
+source_file = 1, C:/Users/home/Desktop/quartus_verilog_github/or_gate/db/or_gate.cbx.xml
+design_name = or_gate
+instance = comp, \out~output , out~output, or_gate, 1
+instance = comp, \in2~input , in2~input, or_gate, 1
+instance = comp, \in1~input , in1~input, or_gate, 1
+instance = comp, \out~0 , out~0, or_gate, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, or_gate, 1

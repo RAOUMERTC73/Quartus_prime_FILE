@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Desktop/VIDEO/fullsub8/fullsub8.sv
+source_file = 1, C:/Users/home/Desktop/VIDEO/fullsub8/db/fullsub8.cbx.xml
+design_name = fullsub8
+instance = comp, \sum~output , sum~output, fullsub8, 1
+instance = comp, \cout~output , cout~output, fullsub8, 1
+instance = comp, \a~input , a~input, fullsub8, 1
+instance = comp, \cin~input , cin~input, fullsub8, 1
+instance = comp, \b~input , b~input, fullsub8, 1
+instance = comp, \sum~0 , sum~0, fullsub8, 1
+instance = comp, \cout~0 , cout~0, fullsub8, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, fullsub8, 1

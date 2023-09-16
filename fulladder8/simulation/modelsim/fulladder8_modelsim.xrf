@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, D:/Downloads/Programs/fulladder8/fulladder8.sv
+source_file = 1, D:/Downloads/Programs/fulladder8/db/fulladder8.cbx.xml
+design_name = fulladder1
+instance = comp, \sum~output , sum~output, fulladder1, 1
+instance = comp, \cout~output , cout~output, fulladder1, 1
+instance = comp, \a~input , a~input, fulladder1, 1
+instance = comp, \cin~input , cin~input, fulladder1, 1
+instance = comp, \b~input , b~input, fulladder1, 1
+instance = comp, \sum~0 , sum~0, fulladder1, 1
+instance = comp, \cout~0 , cout~0, fulladder1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, fulladder1, 1

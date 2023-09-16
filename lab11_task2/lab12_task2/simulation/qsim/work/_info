@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Desktop/VIDEO/lab11_task2/lab12_task2/simulation/qsim
+vmux6to1
+Z1 !s110 1674484163
+!i10b 1
+!s100 BjOlGBlWajdkG;nOdgZKN1
+IDQO]HQX@XMO9a9<ocDj@n0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1674484162
+8mux6to1.vo
+Fmux6to1.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1674484163.000000
+!s107 mux6to1.vo|
+!s90 -work|work|mux6to1.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmux6to1_vlg_vec_tst
+R1
+!i10b 1
+!s100 kVjoPd6DW1Cg[5cnPYWmd3
+I40<:i1RVPde?L^2cdNUz^0
+R2
+R0
+w1674484160
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

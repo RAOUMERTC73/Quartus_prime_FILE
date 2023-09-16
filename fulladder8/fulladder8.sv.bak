@@ -1,0 +1,36 @@
+module fulladder8(a, b, cin, sum, cout);
+
+ input a,b,cin;
+ output sum,cout;
+
+ assign sum=(a^b^cin);
+ assign cout=((a&b)|(b&cin)|(a&cin));
+ //assign{cout, sum} = a+b+cin;
+ 
+endmodule
+
+module selectAdd8(
+    input [7:0] a,
+    input [7:0] b,
+    input cin,
+    output reg [7:0] sum,
+    output reg cout
+    );
+        
+        reg coutL, sumL, sum0, sum1, cout0, cout1;
+
+        add4 add_lower(a[3:0],b[3:0],cin,sum,cout);
+        add4 add4_0(a[7:4],b[7:4],0,sum0,cout0);
+        add4 add4_1(a[7:4],b[7:4],1,sum1,cout1);
+        
+        always @ (*)
+        
+        if (coutL==1) begin
+                sum = {sum1, sumL};
+                cout = 1;
+        end else begin
+                sum = {sum0, sumL};
+                cout = 0;
+        end
+        
+endmodule

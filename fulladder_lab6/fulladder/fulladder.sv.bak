@@ -1,0 +1,12 @@
+//fulladder ckt TC-073
+
+module fulladder (s,cout,a,b,c_in);
+
+output s,cout;
+input a,b,c_in;
+
+assign s=(and(!a,!b,c)||and(!a,b,!c)||and(a,!b,!c)||and(a,b,c));
+
+assign cout=(and(!a,b,c)||and(a,!b,c)||and(a,b,!c)||and(a,b,c));
+
+endmodule

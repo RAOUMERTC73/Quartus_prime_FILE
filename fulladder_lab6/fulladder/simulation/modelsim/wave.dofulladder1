@@ -1,0 +1,10 @@
+view wave 
+wave clipboard store
+wave create -driver freeze -pattern clock -initialvalue 0 -period 250ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/fulladder/c 
+wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/fulladder/a 
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 500ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/fulladder/a 
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 500ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/fulladder/a 
+wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/fulladder/b 
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 1000ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/fulladder/b 
+WaveCollapseAll -1
+wave clipboard restore
