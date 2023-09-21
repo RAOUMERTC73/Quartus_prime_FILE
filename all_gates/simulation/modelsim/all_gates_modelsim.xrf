@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Rao/Desktop/Quartus_github/all_gates/all_gates.sv
+source_file = 1, C:/Users/Rao/Desktop/Quartus_github/all_gates/all_gates_tb.sv
+source_file = 1, C:/Users/Rao/Desktop/Quartus_github/all_gates/db/all_gates.cbx.xml
+design_name = all_gates
+instance = comp, \AND~output , AND~output, all_gates, 1
+instance = comp, \OR~output , OR~output, all_gates, 1
+instance = comp, \XOR~output , XOR~output, all_gates, 1
+instance = comp, \NAND~output , NAND~output, all_gates, 1
+instance = comp, \NOR~output , NOR~output, all_gates, 1
+instance = comp, \a~input , a~input, all_gates, 1
+instance = comp, \b~input , b~input, all_gates, 1
+instance = comp, \AND~0 , AND~0, all_gates, 1
+instance = comp, \OR~0 , OR~0, all_gates, 1
+instance = comp, \XOR~0 , XOR~0, all_gates, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, all_gates, 1

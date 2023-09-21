@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/all_gates {C:/Users/Rao/Desktop/Quartus_github/all_gates/all_gates.sv}
+
