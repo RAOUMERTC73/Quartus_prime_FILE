@@ -1,0 +1,24 @@
+ 
+module half_add_gatel(input a,
+                      input b,
+							 output logic SUM,
+							 output logic CARRY);
+ 
+ 
+
+always@(*)begin
+
+
+
+ SUM = A ^ B = (A&~B)|(~A&B);
+ 
+ CARRY = A & B 
+
+
+
+end
+
+
+
+
+endmodule
