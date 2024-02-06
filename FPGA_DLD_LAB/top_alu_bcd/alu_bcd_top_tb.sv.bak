@@ -1,0 +1,41 @@
+module alu_bcd_top_tb();
+
+    // Inputs
+    reg [9:0] SW;
+    reg [1:0] KEY;
+
+    // Outputs
+    wire [4:0] LEDR;
+    wire [6:0] HEX0;
+
+    // Instantiate the design under test
+    alu_bcd_top uut (
+        .SW(SW),
+        .KEY(KEY),
+        .LEDR(LEDR),
+        .HEX0(HEX0)
+    );
+
+    // Test stimulus
+    initial begin
+        // Initialize inputs
+        SW = 10'b0000000000; // Set your initial values
+        KEY = 2'b00;         // Set your initial values
+
+        // Apply stimulus
+        repeat (20) begin
+            // Provide input values
+            SW = SW + 1; // Modify as per your test case
+            KEY = KEY + 1; // Modify as per your test case
+
+            // Display input and output values
+            $display("Time=%0t, SW=%b, KEY=%b, LEDR=%b, HEX0=%b", $time, SW, KEY, LEDR, HEX0);
+
+           
+            #10;
+        end
+
+        // Finish simulation
+        $finish;
+    end
+endmodule

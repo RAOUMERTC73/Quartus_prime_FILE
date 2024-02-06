@@ -1,0 +1,318 @@
+|part4
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+SW[4] => SW[4].IN3
+SW[5] => SW[5].IN3
+SW[6] => SW[6].IN3
+SW[7] => SW[7].IN3
+SW[8] => SW[8].IN1
+LEDR[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= b2d_7seg:HEX1_ins.port1
+HEX5[1] <= b2d_7seg:HEX1_ins.port1
+HEX5[2] <= b2d_7seg:HEX1_ins.port1
+HEX5[3] <= b2d_7seg:HEX1_ins.port1
+HEX5[4] <= b2d_7seg:HEX1_ins.port1
+HEX5[5] <= b2d_7seg:HEX1_ins.port1
+HEX5[6] <= b2d_7seg:HEX1_ins.port1
+HEX3[0] <= b2d_7seg:HEX0_ins.port1
+HEX3[1] <= b2d_7seg:HEX0_ins.port1
+HEX3[2] <= b2d_7seg:HEX0_ins.port1
+HEX3[3] <= b2d_7seg:HEX0_ins.port1
+HEX3[4] <= b2d_7seg:HEX0_ins.port1
+HEX3[5] <= b2d_7seg:HEX0_ins.port1
+HEX3[6] <= b2d_7seg:HEX0_ins.port1
+HEX1[0] <= circuitB:B0.port1
+HEX1[1] <= circuitB:B0.port1
+HEX1[2] <= circuitB:B0.port1
+HEX1[3] <= circuitB:B0.port1
+HEX1[4] <= circuitB:B0.port1
+HEX1[5] <= circuitB:B0.port1
+HEX1[6] <= circuitB:B0.port1
+HEX0[0] <= b2d_7seg:S0.port1
+HEX0[1] <= b2d_7seg:S0.port1
+HEX0[2] <= b2d_7seg:S0.port1
+HEX0[3] <= b2d_7seg:S0.port1
+HEX0[4] <= b2d_7seg:S0.port1
+HEX0[5] <= b2d_7seg:S0.port1
+HEX0[6] <= b2d_7seg:S0.port1
+
+
+|part4|comparator:C0
+V[0] => ~NO_FANOUT~
+V[1] => A.IN0
+V[2] => A.IN1
+V[3] => A.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|comparator:C1
+V[0] => ~NO_FANOUT~
+V[1] => A.IN0
+V[2] => A.IN1
+V[3] => A.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|b2d_7seg:HEX0_ins
+X[0] => Equal0.IN3
+X[0] => Equal1.IN0
+X[0] => Equal2.IN3
+X[0] => Equal3.IN1
+X[0] => Equal4.IN3
+X[0] => Equal5.IN1
+X[0] => Equal6.IN3
+X[0] => Equal7.IN2
+X[0] => Equal8.IN3
+X[0] => Equal9.IN1
+X[1] => Equal0.IN2
+X[1] => Equal1.IN3
+X[1] => Equal2.IN0
+X[1] => Equal3.IN0
+X[1] => Equal4.IN2
+X[1] => Equal5.IN3
+X[1] => Equal6.IN1
+X[1] => Equal7.IN1
+X[1] => Equal8.IN2
+X[1] => Equal9.IN3
+X[2] => Equal0.IN1
+X[2] => Equal1.IN2
+X[2] => Equal2.IN2
+X[2] => Equal3.IN3
+X[2] => Equal4.IN0
+X[2] => Equal5.IN0
+X[2] => Equal6.IN0
+X[2] => Equal7.IN0
+X[2] => Equal8.IN1
+X[2] => Equal9.IN2
+X[3] => Equal0.IN0
+X[3] => Equal1.IN1
+X[3] => Equal2.IN1
+X[3] => Equal3.IN2
+X[3] => Equal4.IN1
+X[3] => Equal5.IN2
+X[3] => Equal6.IN2
+X[3] => Equal7.IN3
+X[3] => Equal8.IN0
+X[3] => Equal9.IN0
+SSD[0] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|b2d_7seg:HEX1_ins
+X[0] => Equal0.IN3
+X[0] => Equal1.IN0
+X[0] => Equal2.IN3
+X[0] => Equal3.IN1
+X[0] => Equal4.IN3
+X[0] => Equal5.IN1
+X[0] => Equal6.IN3
+X[0] => Equal7.IN2
+X[0] => Equal8.IN3
+X[0] => Equal9.IN1
+X[1] => Equal0.IN2
+X[1] => Equal1.IN3
+X[1] => Equal2.IN0
+X[1] => Equal3.IN0
+X[1] => Equal4.IN2
+X[1] => Equal5.IN3
+X[1] => Equal6.IN1
+X[1] => Equal7.IN1
+X[1] => Equal8.IN2
+X[1] => Equal9.IN3
+X[2] => Equal0.IN1
+X[2] => Equal1.IN2
+X[2] => Equal2.IN2
+X[2] => Equal3.IN3
+X[2] => Equal4.IN0
+X[2] => Equal5.IN0
+X[2] => Equal6.IN0
+X[2] => Equal7.IN0
+X[2] => Equal8.IN1
+X[2] => Equal9.IN2
+X[3] => Equal0.IN0
+X[3] => Equal1.IN1
+X[3] => Equal2.IN1
+X[3] => Equal3.IN2
+X[3] => Equal4.IN1
+X[3] => Equal5.IN2
+X[3] => Equal6.IN2
+X[3] => Equal7.IN3
+X[3] => Equal8.IN0
+X[3] => Equal9.IN0
+SSD[0] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|fulladder:A0
+a => d.IN0
+b => d.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|fulladder:A1
+a => d.IN0
+b => d.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|fulladder:A2
+a => d.IN0
+b => d.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|fulladder:A3
+a => d.IN0
+b => d.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|comparator9:C2
+V[0] => ~NO_FANOUT~
+V[1] => A.IN0
+V[2] => A.IN0
+V[3] => A.IN1
+V[3] => A.IN1
+V[4] => A.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|circuitA:A4
+V[0] => A[0].DATAIN
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A.IN0
+V[1] => A[1].DATAIN
+V[2] => A.IN1
+V[3] => A.IN1
+V[3] => A.IN1
+A[0] <= V[0].DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= V[1].DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|mux_4bit_2to1:M0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+S => M.IN0
+U[0] => M.IN1
+U[1] => M.IN1
+U[2] => M.IN1
+U[3] => M.IN1
+V[0] => M.IN1
+V[1] => M.IN1
+V[2] => M.IN1
+V[3] => M.IN1
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[3] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|circuitB:B0
+z => SSD[3].DATAIN
+z => SSD[0].DATAIN
+z => SSD[5].DATAIN
+z => SSD[4].DATAIN
+SSD[0] <= z.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= <GND>
+SSD[2] <= <GND>
+SSD[3] <= z.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= z.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= z.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= <VCC>
+
+
+|part4|b2d_7seg:S0
+X[0] => Equal0.IN3
+X[0] => Equal1.IN0
+X[0] => Equal2.IN3
+X[0] => Equal3.IN1
+X[0] => Equal4.IN3
+X[0] => Equal5.IN1
+X[0] => Equal6.IN3
+X[0] => Equal7.IN2
+X[0] => Equal8.IN3
+X[0] => Equal9.IN1
+X[1] => Equal0.IN2
+X[1] => Equal1.IN3
+X[1] => Equal2.IN0
+X[1] => Equal3.IN0
+X[1] => Equal4.IN2
+X[1] => Equal5.IN3
+X[1] => Equal6.IN1
+X[1] => Equal7.IN1
+X[1] => Equal8.IN2
+X[1] => Equal9.IN3
+X[2] => Equal0.IN1
+X[2] => Equal1.IN2
+X[2] => Equal2.IN2
+X[2] => Equal3.IN3
+X[2] => Equal4.IN0
+X[2] => Equal5.IN0
+X[2] => Equal6.IN0
+X[2] => Equal7.IN0
+X[2] => Equal8.IN1
+X[2] => Equal9.IN2
+X[3] => Equal0.IN0
+X[3] => Equal1.IN1
+X[3] => Equal2.IN1
+X[3] => Equal3.IN2
+X[3] => Equal4.IN1
+X[3] => Equal5.IN2
+X[3] => Equal6.IN2
+X[3] => Equal7.IN3
+X[3] => Equal8.IN0
+X[3] => Equal9.IN0
+SSD[0] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[1] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[2] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[3] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[4] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[5] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+SSD[6] <= SSD.DB_MAX_OUTPUT_PORT_TYPE
+
+

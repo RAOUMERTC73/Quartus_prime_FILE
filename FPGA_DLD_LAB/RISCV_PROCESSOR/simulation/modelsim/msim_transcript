@@ -1,0 +1,208 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:31 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 19:23:31 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/riscvsingle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:31 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/riscvsingle.sv 
+# -- Compiling module riscvsingle
+# 
+# Top level modules:
+# 	riscvsingle
+# End time: 19:23:31 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:31 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 19:23:31 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/maindec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:31 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/maindec.sv 
+# -- Compiling module maindec
+# 
+# Top level modules:
+# 	maindec
+# End time: 19:23:32 on Jan 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/aludec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:32 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/aludec.sv 
+# -- Compiling module aludec
+# 
+# Top level modules:
+# 	aludec
+# End time: 19:23:32 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:32 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 19:23:32 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:32 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:23:32 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:33 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 19:23:33 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:33 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 19:23:33 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:33 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 19:23:33 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:33 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 19:23:33 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/mux3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:34 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/mux3.sv 
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# End time: 19:23:34 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:34 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 19:23:34 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:34 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:23:34 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:34 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 19:23:35 on Jan 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR {C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/top_ricsv_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:23:35 on Jan 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR" C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/top_ricsv_tb.sv 
+# -- Compiling module top_ricsv_tb
+# 
+# Top level modules:
+# 	top_ricsv_tb
+# End time: 19:23:35 on Jan 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_ricsv_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_ricsv_tb 
+# Start time: 19:23:35 on Jan 02,2024
+# Loading sv_std.std
+# Loading work.top_ricsv_tb
+# Loading work.top
+# Loading work.riscvsingle
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludec
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.mux3
+# Loading work.imem
+# Loading work.dmem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-7) Failed to open readmem file "riscvtest.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/imem.sv(7)
+#    Time: 0 ps  Iteration: 0  Instance: /top_ricsv_tb/dut/imem
+# Break key hit
+# Break in Module regfile at C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/RISCV_PROCESSOR/regfile.sv line 14
+# End time: 19:43:09 on Jan 02,2024, Elapsed time: 0:19:34
+# Errors: 0, Warnings: 1

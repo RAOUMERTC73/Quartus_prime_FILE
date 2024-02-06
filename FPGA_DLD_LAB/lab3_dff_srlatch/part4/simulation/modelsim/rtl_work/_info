@@ -1,0 +1,135 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/simulation/modelsim
+vgated_d_latch
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1704027696
+!i10b 1
+!s100 daRMfm2gJN^fajE0G;J>93
+IoX4ii;0]zN^@cGF_RNZ`70
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 gated_d_latch_sv_unit
+S1
+R0
+w1700253861
+8C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/gated_d_latch.sv
+FC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/gated_d_latch.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1704027696.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/gated_d_latch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4|C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/gated_d_latch.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4
+Z8 tCvgOpt 0
+vneg_edge_flip_flop
+R1
+R2
+!i10b 1
+!s100 R1@;LT7ICiTdPzbP]]bZS3
+IB1VYQ7GNWhC=MckIzfIHc3
+R3
+!s105 neg_edge_flip_flop_sv_unit
+S1
+R0
+w1700253602
+8C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/neg_edge_flip_flop.sv
+FC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/neg_edge_flip_flop.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/neg_edge_flip_flop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4|C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/neg_edge_flip_flop.sv|
+!i113 1
+R6
+R7
+R8
+vpart4
+R1
+R2
+!i10b 1
+!s100 FF7UX1_:5Qe_JXaz:<k5>2
+IGkHZGC7cPo^Bd=b]HRc4J3
+R3
+!s105 part4_sv_unit
+S1
+R0
+w1700253420
+8C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4.sv
+FC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1704027695.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4|C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4.sv|
+!i113 1
+R6
+R7
+R8
+vpart4_tb
+R1
+!s110 1704027697
+!i10b 1
+!s100 >DWE?0IZ4oLo3LJV<A[MA0
+I?zDKIz[2=YXggg_=O@VU12
+R3
+!s105 part4_tb_sv_unit
+S1
+R0
+w1703947389
+8C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4_tb.sv
+FC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4_tb.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4|C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/part4_tb.sv|
+!i113 1
+R6
+R7
+R8
+vpos_edge_flip_flop
+R1
+R2
+!i10b 1
+!s100 3?VAOHX8G5`_ozd8?<O`L3
+Ihl_JB6Bl1Ul^AnmDd;dZR1
+R3
+!s105 pos_edge_flip_flop_sv_unit
+S1
+R0
+w1700253556
+8C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/pos_edge_flip_flop.sv
+FC:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/pos_edge_flip_flop.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/pos_edge_flip_flop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4|C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/lab3_dff_srlatch/part4/pos_edge_flip_flop.sv|
+!i113 1
+R6
+R7
+R8

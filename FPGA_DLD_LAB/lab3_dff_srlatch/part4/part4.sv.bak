@@ -1,0 +1,32 @@
+module part4(Clk,D, Qa,Qb,Qc);
+  input Clk,D;
+  output logic Qa,Qb,Qc;
+
+  wire Q;
+
+  latchD L0(Clk, D, Qa);
+  dff_p dutposi(Clk, D, Qb);
+  dff_p dutnegi(~Clk, D, Qc);
+  
+endmodule
+
+
+module latchD (Clk, D, Q);
+  input D, Clk;
+  output reg Q;
+  always @ (D, Clk)
+    if (Clk)
+      Q = D;
+endmodule
+
+
+
+module dff_p(q,d,clk);
+output q;
+input d, clk;
+reg q;
+always @(posedge clk)
+begin
+q <= d;
+end
+endmodule

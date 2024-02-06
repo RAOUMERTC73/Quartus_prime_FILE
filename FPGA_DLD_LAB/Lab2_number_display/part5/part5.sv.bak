@@ -1,0 +1,61 @@
+module part5 (SW, LEDR, HEX0, HEX1, HEX3, HEX5);
+	input [8:0] SW;
+	output [8:0] LEDR;
+	output [6:0] HEX0, HEX1, HEX3, HEX5;
+
+	wire [3:0] A,B,S0,S1;
+	wire [4:0] T0;
+	wire c1;
+	reg [4:0] Z0;
+	reg c0;
+
+	assign LEDR = SW;
+	assign A = SW[7:4];
+	assign B = SW[3:0];
+	assign c1 = SW[8];
+
+	assign T0 = A + B + c1;
+
+	always @ (T0)
+		begin
+			if (T0 > 9)
+				begin
+					Z0 = 5'd10;			
+					c0 = 1'd1;					
+				end
+			else
+				begin
+					Z0 = 5'd0;			
+					c0 = 1'd0;		
+				end
+		end
+
+	assign S0 = T0 - Z0;
+	assign S1 = c0;
+
+
+	b2d_7seg ssd0 (.X(S0),.SSD(HEX0));
+	b2d_7seg ssd1 (.X(S1),.SSD(HEX1));
+	b2d_7seg ssd2 (.X(B),.SSD(HEX3));
+	b2d_7seg ssd3 (.X(A),.SSD(HEX5));
+
+endmodule
+
+
+module b2d_7seg (X, SSD);
+       input [3:0] X;
+       output [6:0] SSD;
+      
+assign SSD = (X[3:0] == 4'b0000) ? 7'b0000001 :
+             (X[3:0] == 4'b0001) ? 7'b1001111 : 
+             (X[3:0] == 4'b0010) ? 7'b0010010: 
+             (X[3:0] == 4'b0011) ? 7'b0000110 : 
+             (X[3:0] == 4'b0100) ? 7'b1001100 : 
+             (X[3:0] == 4'b0101) ? 7'b0100100 :
+             (X[3:0] == 4'b0110) ? 7'b0100000 :
+             (X[3:0] == 4'b0111) ? 7'b0001111 :
+             (X[3:0] == 4'b1000) ? 7'b0000000 :
+             (X[3:0] == 4'b1001) ? 7'b0001100 :
+             7'b1111111;
+
+endmodule
