@@ -1,0 +1,36 @@
+module lab1_part2(
+
+  input [9:0] SW,    // Switch inputs
+  output [9:0] LEDR  // LED outputs
+);
+
+  wire [3:0] X;      // Four-bit input X
+  wire [3:0] Y;      // Four-bit input Y
+  wire S;            // Select input S
+  wire [3:0] M;      // Four-bit output M
+
+  // Connect the switches to inputs X and Y
+  assign X = SW[3:0];
+  assign Y = SW[7:4];
+
+  // Connect SW9 to input S
+  assign S = SW[9];
+
+  // Instantiate the four-bit wide 2-to-1 multiplexer
+  four_bitw_2_1_mux dut(
+    .X(X),
+    .Y(Y),
+    .S(S),
+    .M(M)
+  );
+
+  // Display the value of S on LEDR9
+  assign LEDR[9] = S;
+
+  // Connect the output M to LEDR3-0
+  assign LEDR[3:0] = M;
+
+  // Connect the unused LEDs to 0
+  assign LEDR[8:4] = 5'b00000;
+
+endmodule

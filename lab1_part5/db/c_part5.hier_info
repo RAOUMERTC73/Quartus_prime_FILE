@@ -1,0 +1,132 @@
+|c_part5
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= two_bit_7_segment_decoder:H0.port1
+HEX0[5] <= two_bit_7_segment_decoder:H0.port1
+HEX0[4] <= two_bit_7_segment_decoder:H0.port1
+HEX0[3] <= two_bit_7_segment_decoder:H0.port1
+HEX0[2] <= two_bit_7_segment_decoder:H0.port1
+HEX0[1] <= two_bit_7_segment_decoder:H0.port1
+HEX0[0] <= two_bit_7_segment_decoder:H0.port1
+HEX1[6] <= two_bit_7_segment_decoder:H1.port1
+HEX1[5] <= two_bit_7_segment_decoder:H1.port1
+HEX1[4] <= two_bit_7_segment_decoder:H1.port1
+HEX1[3] <= two_bit_7_segment_decoder:H1.port1
+HEX1[2] <= two_bit_7_segment_decoder:H1.port1
+HEX1[1] <= two_bit_7_segment_decoder:H1.port1
+HEX1[0] <= two_bit_7_segment_decoder:H1.port1
+HEX2[6] <= two_bit_7_segment_decoder:H2.port1
+HEX2[5] <= two_bit_7_segment_decoder:H2.port1
+HEX2[4] <= two_bit_7_segment_decoder:H2.port1
+HEX2[3] <= two_bit_7_segment_decoder:H2.port1
+HEX2[2] <= two_bit_7_segment_decoder:H2.port1
+HEX2[1] <= two_bit_7_segment_decoder:H2.port1
+HEX2[0] <= two_bit_7_segment_decoder:H2.port1
+HEX3[6] <= two_bit_7_segment_decoder:H3.port1
+HEX3[5] <= two_bit_7_segment_decoder:H3.port1
+HEX3[4] <= two_bit_7_segment_decoder:H3.port1
+HEX3[3] <= two_bit_7_segment_decoder:H3.port1
+HEX3[2] <= two_bit_7_segment_decoder:H3.port1
+HEX3[1] <= two_bit_7_segment_decoder:H3.port1
+HEX3[0] <= two_bit_7_segment_decoder:H3.port1
+
+
+|c_part5|mux_2bit_4to1:U0
+S[0] => Equal0.IN1
+S[0] => Equal1.IN0
+S[0] => Equal2.IN1
+S[0] => Equal3.IN1
+S[1] => Equal0.IN0
+S[1] => Equal1.IN1
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+U[0] => M[0].DATAB
+U[1] => M[1].DATAB
+V[0] => M[0].DATAB
+V[1] => M[1].DATAB
+W[0] => M[0].DATAB
+W[1] => M[1].DATAB
+X[0] => M[0].DATAA
+X[1] => M[1].DATAA
+M[0] <= M[0].DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|c_part5|two_bit_7_segment_decoder:H0
+C[0] => Decoder0.IN1
+C[0] => Display[1].DATAIN
+C[0] => Display[6].DATAIN
+C[1] => Decoder0.IN0
+C[1] => Display[0].DATAIN
+Display[6] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|c_part5|two_bit_7_segment_decoder:H1
+C[0] => Decoder0.IN1
+C[0] => Display[1].DATAIN
+C[0] => Display[6].DATAIN
+C[1] => Decoder0.IN0
+C[1] => Display[0].DATAIN
+Display[6] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|c_part5|two_bit_7_segment_decoder:H2
+C[0] => Decoder0.IN1
+C[0] => Display[1].DATAIN
+C[0] => Display[6].DATAIN
+C[1] => Decoder0.IN0
+C[1] => Display[0].DATAIN
+Display[6] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|c_part5|two_bit_7_segment_decoder:H3
+C[0] => Decoder0.IN1
+C[0] => Display[1].DATAIN
+C[0] => Display[6].DATAIN
+C[1] => Decoder0.IN0
+C[1] => Display[0].DATAIN
+Display[6] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

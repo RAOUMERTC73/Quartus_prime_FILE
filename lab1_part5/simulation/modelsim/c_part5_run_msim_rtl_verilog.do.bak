@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv}
+vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv}
+vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv}
+

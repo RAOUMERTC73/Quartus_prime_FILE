@@ -1,0 +1,14 @@
+module two_bit_7_segment_decoder (
+  input [1:0] c1c0,     // 2-bit input c1c0
+  output [6:0] HEX0     // 7-bit output for 7-segment display
+);
+
+  // Define the logic functions to activate each segment based on c1c0
+  
+  assign HEX0 = (c1c0 == 2'b00) ? 7'b0100001 :  // 'd'
+                (c1c0 == 2'b01) ? 7'b0000110 :  // 'E'
+                (c1c0 == 2'b10) ? 7'b1111001 :  // '1'
+                (c1c0 == 2'b11) ? 7'b1000000 :  // '0'
+                7'b1111111;                      // Blank (all segments off)
+
+endmodule

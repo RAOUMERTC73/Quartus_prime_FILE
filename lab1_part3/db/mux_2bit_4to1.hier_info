@@ -1,0 +1,21 @@
+|mux_2bit_4to1
+S[0] => Equal0.IN1
+S[0] => Equal1.IN0
+S[0] => Equal2.IN1
+S[0] => Equal3.IN1
+S[1] => Equal0.IN0
+S[1] => Equal1.IN1
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+U[0] => M[0].DATAB
+U[1] => M[1].DATAB
+V[0] => M[0].DATAB
+V[1] => M[1].DATAB
+W[0] => M[0].DATAB
+W[1] => M[1].DATAB
+X[0] => M[0].DATAA
+X[1] => M[1].DATAA
+M[0] <= M[0].DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

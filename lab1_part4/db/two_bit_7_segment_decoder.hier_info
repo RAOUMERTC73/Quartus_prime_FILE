@@ -1,0 +1,15 @@
+|two_bit_7_segment_decoder
+C[0] => Decoder0.IN1
+C[0] => Display[1].DATAIN
+C[0] => Display[6].DATAIN
+C[1] => Decoder0.IN0
+C[1] => Display[0].DATAIN
+Display[6] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Display[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Display[0] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Rao/Desktop/Quartus_github/lab1_part4/two_bit_7_segment_decoder.sv
+source_file = 1, C:/Users/Rao/Desktop/Quartus_github/lab1_part4/db/two_bit_7_segment_decoder.cbx.xml
+design_name = two_bit_7_segment_decoder
+instance = comp, \Display[6]~output , Display[6]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[5]~output , Display[5]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[4]~output , Display[4]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[3]~output , Display[3]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[2]~output , Display[2]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[1]~output , Display[1]~output, two_bit_7_segment_decoder, 1
+instance = comp, \Display[0]~output , Display[0]~output, two_bit_7_segment_decoder, 1
+instance = comp, \C[0]~input , C[0]~input, two_bit_7_segment_decoder, 1
+instance = comp, \C[1]~input , C[1]~input, two_bit_7_segment_decoder, 1
+instance = comp, \Decoder0~0 , Decoder0~0, two_bit_7_segment_decoder, 1
+instance = comp, \Decoder0~1 , Decoder0~1, two_bit_7_segment_decoder, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, two_bit_7_segment_decoder, 1

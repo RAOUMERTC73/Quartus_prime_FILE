@@ -1,8 +1,0 @@
-|part1
-Clk => comb.IN0
-Clk => comb.IN0
-R => comb.IN1
-S => comb.IN1
-Q << Q.DB_MAX_OUTPUT_PORT_TYPE
-
-

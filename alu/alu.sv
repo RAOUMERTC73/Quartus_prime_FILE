@@ -11,17 +11,17 @@ multi =   2'b10
 div    =  2'b11 
 
 
-size of input1 and input2 = 8 bits
-size of output            = 8 bits*/
+size of input1 and input2 = 5 bits
+size of output            = 5 bits*/
 
-/*module alu( input wire [7:0] num1,
-            input wire [7:0] num2,
-            input wire [1:0] operation,
+module alu( input wire [5-1:0] num1,
+            input wire [5-1:0] num2,
+            input wire [2-1:0] operation,
             
-            output wire [16-1:0] out);
+            output wire [5-1:0] out);
   
   
-            reg [16-1:0] temp_out;
+            reg [5-1:0] temp_out;
   
   
            always@(*) begin 
@@ -38,23 +38,30 @@ size of output            = 8 bits*/
 				
                   temp_out = num1 * num2;
 						
-            else if(operation==2'b11)    // div
-				
-                  temp_out = num1 / num2;
             else
                   temp_out=0;
           end
           
           assign out = temp_out;
                   
-endmodule*/
+endmodule
 
-module alu(
 
-  input logic [2-1:0] a,
-  input logic [2-1:0] b,
-  input logic [2:0] opcode,
-  output reg [3-1:0] result
+
+
+
+
+
+
+
+
+
+/*module alu(
+
+  input logic [5-1:0] a,
+  input logic [5-1:0] b,
+  input logic [3-1:0] opcode,
+  output reg [5-1:0] result
   
 );
  
@@ -78,7 +85,7 @@ module alu(
 endmodule
 
 
-
+*/
 
 
 

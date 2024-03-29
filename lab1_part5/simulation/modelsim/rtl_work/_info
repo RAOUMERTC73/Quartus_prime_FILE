@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rao/Desktop/Quartus_github/lab1_part5/simulation/modelsim
+vc_part5
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1695908414
+!i10b 1
+!s100 S@DTKolT5]oESIiQZU;hL2
+I:GF8[BUF`coZ=<oenkVSj2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 c_part5_sv_unit
+S1
+R0
+w1695906498
+8C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv
+FC:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1695908413.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5|C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5
+Z7 tCvgOpt 0
+vmux_2bit_4to1
+R1
+R2
+!i10b 1
+!s100 9hC540IEF?7U`4CXd@?623
+I]o0OWdmio1=QgAg_5FaJG1
+R3
+!s105 mux_2bit_4to1_sv_unit
+S1
+R0
+w1695907286
+8C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv
+FC:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z8 !s108 1695908414.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5|C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv|
+!i113 1
+R5
+R6
+R7
+vtest_c_part5_tb
+R1
+R2
+!i10b 1
+!s100 KSj[kBP?0LkJO4SmLILH13
+I[jSPL1gjHGYO6nB?deh]60
+R3
+!s105 test_c_part5_tb_sv_unit
+S1
+R0
+w1695908312
+8C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv
+FC:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5|C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv|
+!i113 1
+R5
+R6
+R7
+vtwo_bit_7_segment_decoder
+R1
+R2
+!i10b 1
+!s100 l6^alWE=X0lRF7SoYa>bX3
+I7e[<=<M>E3TZJX9O1zHd00
+R3
+!s105 two_bit_7_segment_decoder_sv_unit
+S1
+R0
+w1695906962
+8C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv
+FC:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5|C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv|
+!i113 1
+R5
+R6
+R7

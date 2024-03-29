@@ -1,0 +1,79 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do c_part5_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:40:13 on Sep 28,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5" C:/Users/Rao/Desktop/Quartus_github/lab1_part5/c_part5.sv 
+# -- Compiling module c_part5
+# 
+# Top level modules:
+# 	c_part5
+# End time: 18:40:14 on Sep 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:40:14 on Sep 28,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5" C:/Users/Rao/Desktop/Quartus_github/lab1_part5/mux_2bit_4to1.sv 
+# -- Compiling module mux_2bit_4to1
+# 
+# Top level modules:
+# 	mux_2bit_4to1
+# End time: 18:40:14 on Sep 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:40:14 on Sep 28,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5" C:/Users/Rao/Desktop/Quartus_github/lab1_part5/two_bit_7_segment_decoder.sv 
+# -- Compiling module two_bit_7_segment_decoder
+# 
+# Top level modules:
+# 	two_bit_7_segment_decoder
+# End time: 18:40:14 on Sep 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5 {C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:40:14 on Sep 28,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Rao/Desktop/Quartus_github/lab1_part5" C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv 
+# -- Compiling module test_c_part5_tb
+# 
+# Top level modules:
+# 	test_c_part5_tb
+# End time: 18:40:14 on Sep 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_c_part5_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test_c_part5_tb 
+# Start time: 18:40:14 on Sep 28,2023
+# Loading sv_std.std
+# Loading work.test_c_part5_tb
+# Loading work.c_part5
+# Loading work.mux_2bit_4to1
+# Loading work.two_bit_7_segment_decoder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Test case 1: SW = 1110101010, LEDR = 1110101010, HEX0 = 1111001, HEX1 = 1111001, HEX2 = 1111001, HEX3 = 1111001
+# Test case 2: SW = 0110101010, LEDR = 0110101010, HEX0 = 1111001, HEX1 = 1111001, HEX2 = 1111001, HEX3 = 1111001
+# Test case 3: SW = 0010101010, LEDR = 0010101010, HEX0 = 1111001, HEX1 = 1111001, HEX2 = 1111001, HEX3 = 1111001
+# Test case 4: SW = 1010101010, LEDR = 1010101010, HEX0 = 1111001, HEX1 = 1111001, HEX2 = 1111001, HEX3 = 1111001
+# ** Note: $finish    : C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv(44)
+#    Time: 40 ps  Iteration: 0  Instance: /test_c_part5_tb
+# 1
+# Break in Module test_c_part5_tb at C:/Users/Rao/Desktop/Quartus_github/lab1_part5/test_c_part5_tb.sv line 44
+# End time: 18:44:16 on Sep 28,2023, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 0

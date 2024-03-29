@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu
-Tue Oct 03 22:41:45 2023
+Sun Dec 24 18:07:33 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,9 +15,10 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +45,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 03 22:41:45 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 24 18:07:33 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; alu                                         ;
 ; Top-level Entity Name           ; alu                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 10                                          ;
+; Total pins                      ; 17                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 1                                           ;
@@ -176,31 +177,31 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 3               ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 5               ;
-;     -- 7 input functions                    ; 1               ;
-;     -- 6 input functions                    ; 0               ;
-;     -- 5 input functions                    ; 4               ;
-;     -- 4 input functions                    ; 0               ;
-;     -- <=3 input functions                  ; 0               ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 0               ;
-;                                             ;                 ;
-; I/O pins                                    ; 10              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 1               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; opcode[0]~input ;
-; Maximum fan-out                             ; 5               ;
-; Total fan-out                               ; 44              ;
-; Average fan-out                             ; 1.69            ;
-+---------------------------------------------+-----------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimate of Logic utilization (ALMs needed) ; 6                  ;
+;                                             ;                    ;
+; Combinational ALUT usage for logic          ; 11                 ;
+;     -- 7 input functions                    ; 0                  ;
+;     -- 6 input functions                    ; 0                  ;
+;     -- 5 input functions                    ; 0                  ;
+;     -- 4 input functions                    ; 10                 ;
+;     -- <=3 input functions                  ; 1                  ;
+;                                             ;                    ;
+; Dedicated logic registers                   ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 17                 ;
+;                                             ;                    ;
+; Total DSP Blocks                            ; 1                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; operation[0]~input ;
+; Maximum fan-out                             ; 11                 ;
+; Total fan-out                               ; 79                 ;
+; Average fan-out                             ; 1.72               ;
++---------------------------------------------+--------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -208,7 +209,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |alu                       ; 5 (5)               ; 0 (0)                     ; 0                 ; 1          ; 10   ; 0            ; |alu                ; alu         ; work         ;
+; |alu                       ; 11 (11)             ; 0 (0)                     ; 0                 ; 1          ; 17   ; 0            ; |alu                ; alu         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -240,22 +241,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |alu|temp_out              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 6                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 11                          ;
+;     arith             ; 6                           ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 5                           ;
 ;     normal            ; 5                           ;
-;         1 data inputs ; 1                           ;
-;         5 data inputs ; 4                           ;
+;         4 data inputs ; 5                           ;
 ; arriav_mac            ; 1                           ;
-; boundary_port         ; 10                          ;
+; boundary_port         ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.87                        ;
+; Max LUT depth         ; 2.50                        ;
+; Average LUT depth     ; 2.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -274,27 +284,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Oct 03 22:41:08 2023
+    Info: Processing started: Sun Dec 24 18:06:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/Rao/Desktop/Quartus_github/alu/alu.sv Line: 52
-Info (12021): Found 1 design units, including 1 entities, in source file alu_8sbit_tb.sv
-    Info (12023): Found entity 1: ALU_8Sbit_tb File: C:/Users/Rao/Desktop/Quartus_github/alu/ALU_8Sbit_tb.sv Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/Rao/Desktop/Quartus_github/alu/alu.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file alu_5bit_tb.sv
+    Info (12023): Found entity 1: ALU_5bit_tb File: C:/Users/Rao/Desktop/Quartus_github/alu/ALU_5bit_tb.sv Line: 3
 Info (12127): Elaborating entity "alu" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 5 logic cells
+Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 11 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Tue Oct 03 22:41:45 2023
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:01:35
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Sun Dec 24 18:07:33 2023
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:01:37
 
 

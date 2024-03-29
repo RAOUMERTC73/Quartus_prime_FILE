@@ -1,5 +1,5 @@
 Flow report for alu
-Tue Oct 03 22:45:00 2023
+Sun Dec 24 18:10:54 2023
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Oct 03 22:45:00 2023       ;
+; Flow Status                     ; Successful - Sun Dec 24 18:10:54 2023       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; alu                                         ;
 ; Top-level Entity Name           ; alu                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 4 / 32,070 ( < 1 % )                        ;
+; Logic utilization (in ALMs)     ; 6 / 32,070 ( < 1 % )                        ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 10 / 457 ( 2 % )                            ;
+; Total pins                      ; 17 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 1 / 87 ( 1 % )                              ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/03/2023 22:41:10 ;
+; Start date & time ; 12/24/2023 18:06:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; alu                 ;
 +-------------------+---------------------+
@@ -79,15 +79,16 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 121594011772897.169635486906496        ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ALU_8Sbit_tb   ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ALU_8Sbit_tb                           ; --            ; --          ; eda_simulation ;
+; COMPILER_SIGNATURE_ID                ; 121594011772897.170342321513884        ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; alu_5bit_tb    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ALU_5bit_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; Off                                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; ALU_8Sbit_tb.sv                        ; --            ; --          ; ALU_8Sbit_tb   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ALU_8Sbit_tb                           ; --            ; --          ; ALU_8Sbit_tb   ;
-; EDA_TEST_BENCH_NAME                  ; ALU_8Sbit_tb                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ALU_5bit_tb.sv                         ; --            ; --          ; ALU_5bit_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ALU_5bit_tb                            ; --            ; --          ; ALU_5bit_tb    ;
+; EDA_TEST_BENCH_NAME                  ; ALU_5bit_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
@@ -105,12 +106,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:37     ; 1.0                     ; 4824 MB             ; 00:01:35                           ;
-; Fitter                    ; 00:02:04     ; 1.0                     ; 6556 MB             ; 00:03:40                           ;
-; Assembler                 ; 00:00:28     ; 1.0                     ; 4822 MB             ; 00:00:28                           ;
-; TimeQuest Timing Analyzer ; 00:00:19     ; 1.0                     ; 5122 MB             ; 00:00:19                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4726 MB             ; 00:00:05                           ;
-; Total                     ; 00:03:32     ; --                      ; --                  ; 00:06:07                           ;
+; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4825 MB             ; 00:01:36                           ;
+; Fitter                    ; 00:02:11     ; 1.0                     ; 6524 MB             ; 00:04:03                           ;
+; Assembler                 ; 00:00:31     ; 1.0                     ; 4834 MB             ; 00:00:31                           ;
+; TimeQuest Timing Analyzer ; 00:00:22     ; 1.0                     ; 5097 MB             ; 00:00:21                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4728 MB             ; 00:00:05                           ;
+; Total                     ; 00:03:47     ; --                      ; --                  ; 00:06:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

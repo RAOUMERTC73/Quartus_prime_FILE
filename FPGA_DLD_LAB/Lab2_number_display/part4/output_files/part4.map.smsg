@@ -1,2 +1,0 @@
-Info (10281): Verilog HDL Declaration information at part4.sv(8): object "C1" differs only in case from object "c1" in the same scope File: C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/Lab2_number_display/part4/part4.sv Line: 8
-Info (10281): Verilog HDL Declaration information at part4.sv(15): object "c2" differs only in case from object "C2" in the same scope File: C:/Users/Rao/Desktop/Quartus_github/FPGA_DLD_LAB/Lab2_number_display/part4/part4.sv Line: 15

@@ -1,9 +1,0 @@
-module fulladder (a, b, cin, s, cout);
-  input a, b, cin;
-  output cout, s;
-  wire d;
-
-  assign d = a ^ b;
-  assign s = d ^ cin;
-  assign cout = (b & ~d) | (d & cin);
-endmodule

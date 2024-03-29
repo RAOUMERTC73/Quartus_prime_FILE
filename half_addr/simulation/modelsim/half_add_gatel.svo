@@ -1,4 +1,4 @@
-// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -6,25 +6,24 @@
 // associated documentation or information are expressly subject 
 // to the terms and conditions of the Intel Program License 
 // Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel MegaCore Function License Agreement, or other 
-// applicable license agreement, including, without limitation, 
-// that your use is for the sole purpose of programming logic 
-// devices manufactured by Intel and sold by Intel or its 
-// authorized distributors.  Please refer to the applicable 
-// agreement for further details.
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+// VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
-// DATE "09/26/2023 23:20:06"
+// DATE "02/11/2024 17:06:36"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
 // 
 
 // 
-// This Verilog file should be used for ModelSim (SystemVerilog) only
+// This Verilog file should be used for ModelSim-Altera (SystemVerilog) only
 // 
 
 `timescale 1 ps/ 1 ps
@@ -40,10 +39,10 @@ output 	logic SUM ;
 output 	logic CARRY ;
 
 // Design Ports Information
-// SUM	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CARRY	=>  Location: PIN_Y26,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// A	=>  Location: PIN_AC30,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// B	=>  Location: PIN_Y27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SUM	=>  Location: PIN_V16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CARRY	=>  Location: PIN_W16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_AC12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -58,13 +57,13 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \~QUARTUS_CREATED_GND~I_combout ;
-wire \B~input_o ;
 wire \A~input_o ;
+wire \B~input_o ;
 wire \SUM~0_combout ;
 wire \CARRY~0_combout ;
 
 
-// Location: IOOBUF_X89_Y25_N39
+// Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \SUM~output (
 	.i(\SUM~0_combout ),
 	.oe(vcc),
@@ -80,7 +79,7 @@ defparam \SUM~output .open_drain_output = "false";
 defparam \SUM~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X89_Y25_N5
+// Location: IOOBUF_X52_Y0_N19
 cyclonev_io_obuf \CARRY~output (
 	.i(\CARRY~0_combout ),
 	.oe(vcc),
@@ -96,18 +95,7 @@ defparam \CARRY~output .open_drain_output = "false";
 defparam \CARRY~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X89_Y25_N21
-cyclonev_io_ibuf \B~input (
-	.i(B),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\B~input_o ));
-// synopsys translate_off
-defparam \B~input .bus_hold = "false";
-defparam \B~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X89_Y25_N55
+// Location: IOIBUF_X12_Y0_N18
 cyclonev_io_ibuf \A~input (
 	.i(A),
 	.ibar(gnd),
@@ -118,17 +106,28 @@ defparam \A~input .bus_hold = "false";
 defparam \A~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X88_Y25_N0
+// Location: IOIBUF_X16_Y0_N1
+cyclonev_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X47_Y1_N30
 cyclonev_lcell_comb \SUM~0 (
 // Equation(s):
-// \SUM~0_combout  = ( \A~input_o  & ( !\B~input_o  ) ) # ( !\A~input_o  & ( \B~input_o  ) )
+// \SUM~0_combout  = ( \B~input_o  & ( !\A~input_o  ) ) # ( !\B~input_o  & ( \A~input_o  ) )
 
 	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\B~input_o ),
+	.datab(!\A~input_o ),
+	.datac(gnd),
 	.datad(gnd),
-	.datae(!\A~input_o ),
-	.dataf(gnd),
+	.datae(gnd),
+	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -138,21 +137,21 @@ cyclonev_lcell_comb \SUM~0 (
 	.shareout());
 // synopsys translate_off
 defparam \SUM~0 .extended_lut = "off";
-defparam \SUM~0 .lut_mask = 64'h0F0FF0F00F0FF0F0;
+defparam \SUM~0 .lut_mask = 64'h33333333CCCCCCCC;
 defparam \SUM~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X88_Y25_N9
+// Location: MLABCELL_X47_Y1_N9
 cyclonev_lcell_comb \CARRY~0 (
 // Equation(s):
-// \CARRY~0_combout  = ( \A~input_o  & ( \B~input_o  ) )
+// \CARRY~0_combout  = ( \B~input_o  & ( \A~input_o  ) )
 
-	.dataa(!\B~input_o ),
+	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
+	.datac(!\A~input_o ),
 	.datad(gnd),
-	.datae(!\A~input_o ),
-	.dataf(gnd),
+	.datae(gnd),
+	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -162,11 +161,11 @@ cyclonev_lcell_comb \CARRY~0 (
 	.shareout());
 // synopsys translate_off
 defparam \CARRY~0 .extended_lut = "off";
-defparam \CARRY~0 .lut_mask = 64'h0000555500005555;
+defparam \CARRY~0 .lut_mask = 64'h000000000F0F0F0F;
 defparam \CARRY~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X9_Y35_N0
+// Location: MLABCELL_X47_Y62_N3
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

@@ -4,43 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "result[0]",
+					"name" : "out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[1]",
+					"name" : "out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[2]",
+					"name" : "out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[0]",
+					"name" : "out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[2]",
+					"name" : "out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[1]",
+					"name" : "operation[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "operation[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "num1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "num1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "num1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "num1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "num1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "num2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "num2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "num2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "num2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "num2[4]",
 					"strict" : false
 				}
 			]

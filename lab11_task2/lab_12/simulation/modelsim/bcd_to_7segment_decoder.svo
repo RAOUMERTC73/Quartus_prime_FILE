@@ -1,4 +1,4 @@
-// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -6,18 +6,17 @@
 // associated documentation or information are expressly subject 
 // to the terms and conditions of the Intel Program License 
 // Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel MegaCore Function License Agreement, or other 
-// applicable license agreement, including, without limitation, 
-// that your use is for the sole purpose of programming logic 
-// devices manufactured by Intel and sold by Intel or its 
-// authorized distributors.  Please refer to the applicable 
-// agreement for further details.
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+// VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
-// DATE "01/04/2023 13:37:54"
+// DATE "02/13/2024 02:22:52"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896

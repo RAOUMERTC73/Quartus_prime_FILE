@@ -1,6 +1,6 @@
 Flow report for bcd_to_7segment_decoder
-Wed Jan 04 13:39:42 2023
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Tue Feb 13 02:22:52 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -29,20 +29,19 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Jan 04 13:39:42 2023       ;
-; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Flow Status                     ; Successful - Tue Feb 13 02:22:52 2024       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; bcd_to_7segment_decoder                     ;
 ; Top-level Entity Name           ; bcd_to_7segment_decoder                     ;
 ; Family                          ; Cyclone V                                   ;
@@ -68,7 +67,7 @@ agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 01/04/2023 13:36:46     ;
+; Start date & time ; 02/13/2024 02:18:03     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; bcd_to_7segment_decoder ;
 +-------------------+-------------------------+
@@ -79,7 +78,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 207709718400046.167282140613656        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 121594011772897.170777268115768        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -91,35 +90,31 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4816 MB             ; 00:00:23                           ;
-; Fitter                    ; 00:00:43     ; 1.0                     ; 6577 MB             ; 00:01:18                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 4827 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 5109 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4706 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:06     ; --                      ; --                  ; 00:01:54                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 4821 MB             ; 00:01:56                           ;
+; Fitter               ; 00:02:34     ; 1.0                     ; 6545 MB             ; 00:03:55                           ;
+; Assembler            ; 00:00:43     ; 1.0                     ; 4834 MB             ; 00:00:34                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.0                     ; 5107 MB             ; 00:00:22                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4724 MB             ; 00:00:07                           ;
+; Total                ; 00:04:36     ; --                      ; --                  ; 00:06:54                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-35E3K9H  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
@@ -130,8 +125,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off bcd_to_7segment
 quartus_asm --read_settings_files=off --write_settings_files=off bcd_to_7segment_decoder -c bcd_to_7segment_decoder
 quartus_sta bcd_to_7segment_decoder -c bcd_to_7segment_decoder
 quartus_eda --read_settings_files=off --write_settings_files=off bcd_to_7segment_decoder -c bcd_to_7segment_decoder
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off bcd_to_7segment_decoder -c bcd_to_7segment_decoder --vector_source=C:/intelFPGA_lite/17.0/lab_12/Waveform2.vwf --testbench_file=C:/intelFPGA_lite/17.0/lab_12/simulation/qsim/Waveform2.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/17.0/lab_12/simulation/qsim/ bcd_to_7segment_decoder -c bcd_to_7segment_decoder
 
 
 

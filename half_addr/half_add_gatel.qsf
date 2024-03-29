@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY half_add_gatel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:32:23  SEPTEMBER 26, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -63,7 +63,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME hf_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id hf_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME hf_tb -section_id hf_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE hf_tb.sv -section_id hf_tb
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 #============================================================
 # SW
 #============================================================
@@ -101,3 +100,5 @@ set_location_assignment PIN_W16 -to CARRY
 
 
 
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

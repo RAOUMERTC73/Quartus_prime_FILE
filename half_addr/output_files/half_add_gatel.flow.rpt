@@ -1,6 +1,6 @@
 Flow report for half_add_gatel
-Tue Sep 26 23:27:09 2023
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Sun Feb 11 17:06:36 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -29,20 +29,19 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep 26 23:26:48 2023       ;
-; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Flow Status                     ; Successful - Sun Feb 11 17:06:36 2024       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; half_add_gatel                              ;
 ; Top-level Entity Name           ; half_add_gatel                              ;
 ; Family                          ; Cyclone V                                   ;
@@ -68,7 +67,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/26/2023 23:23:12 ;
+; Start date & time ; 02/11/2024 17:02:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; half_add_gatel      ;
 +-------------------+---------------------+
@@ -79,10 +78,11 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 121594011772897.169575259112084        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 121594011772897.170765292811616        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; hf_tb          ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; hf_tb                                  ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; None                                   ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; hf_tb.sv                               ; --            ; --          ; hf_tb          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; hf_tb                                  ; --            ; --          ; hf_tb          ;
@@ -99,29 +99,31 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4822 MB             ; 00:01:38                           ;
-; Fitter                    ; 00:02:26     ; 1.0                     ; 6449 MB             ; 00:06:29                           ;
-; Assembler                 ; 00:00:29     ; 1.0                     ; 4826 MB             ; 00:00:29                           ;
-; TimeQuest Timing Analyzer ; 00:00:19     ; 1.0                     ; 5094 MB             ; 00:00:18                           ;
-; Total                     ; 00:03:52     ; --                      ; --                  ; 00:08:54                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:43     ; 1.0                     ; 4821 MB             ; 00:01:43                           ;
+; Fitter               ; 00:02:22     ; 1.0                     ; 6540 MB             ; 00:03:52                           ;
+; Assembler            ; 00:00:40     ; 1.0                     ; 4829 MB             ; 00:00:30                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.0                     ; 5105 MB             ; 00:00:22                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4726 MB             ; 00:00:07                           ;
+; Total                ; 00:04:16     ; --                      ; --                  ; 00:06:34                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-SSF6FJQ  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
@@ -131,6 +133,7 @@ quartus_map --read_settings_files=on --write_settings_files=off half_add_gatel -
 quartus_fit --read_settings_files=off --write_settings_files=off half_add_gatel -c half_add_gatel
 quartus_asm --read_settings_files=off --write_settings_files=off half_add_gatel -c half_add_gatel
 quartus_sta half_add_gatel -c half_add_gatel
+quartus_eda --read_settings_files=off --write_settings_files=off half_add_gatel -c half_add_gatel
 
 
 

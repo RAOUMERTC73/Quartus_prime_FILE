@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Rao/Desktop/Quartus_github/part2_lab1/simulation/modelsim
+vlab1_part2
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1695836075
+!i10b 1
+!s100 `i>C26Jzk>BO0M3Sm6AJB3
+I2iKOT43]??zJG^^GNbY1f1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 lab1_part2_sv_unit
+S1
+R0
+w1695834579
+8C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2.sv
+FC:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1695836075.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/part2_lab1|C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2.sv|
+!i113 1
+Z4 o-sv -work work
+Z5 !s92 -sv -work work +incdir+C:/Users/Rao/Desktop/Quartus_github/part2_lab1
+Z6 tCvgOpt 0
+vlab1_part2_tb
+R1
+!s110 1695836076
+!i10b 1
+!s100 <dE7[3kV;HEXfg7T68PUT2
+In9Em]MGaf92<>TbG1DZ?13
+R2
+!s105 lab1_part2_tb_sv_unit
+S1
+R0
+w1695835869
+8C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2_tb.sv
+FC:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1695836076.000000
+!s107 C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Rao/Desktop/Quartus_github/part2_lab1|C:/Users/Rao/Desktop/Quartus_github/part2_lab1/lab1_part2_tb.sv|
+!i113 1
+R4
+R5
+R6
